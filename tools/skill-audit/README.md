@@ -64,7 +64,6 @@ human's attention:
 - `local-codex-bookkeeper` references `scripts/codex_lint.py`, which does
   not exist in the installed copy — genuine rot.
 - `local-codex-bookkeeper` references `~/.claude/skills/codex-bookkeeper/`
-  (a Claude Code install on another machine) with a `~/` that only resolves
   on that machine.
 - Container-internal paths (e.g. a Docker volume target `:/home/agent`) can
   surface as false positives; they are visible in the report and easy to
